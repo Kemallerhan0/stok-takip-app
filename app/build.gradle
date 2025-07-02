@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    namespace 'com.example.stoktakip'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.stoktakip"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+}
